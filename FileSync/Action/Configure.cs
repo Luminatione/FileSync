@@ -6,14 +6,11 @@ using System.Threading.Tasks;
 
 namespace FileSync.Action
 {
-	interface AppAction
+	class Configure : AppAction
 	{
-		enum Result
+		public AppAction.Result Perform()
 		{
-			Success = 0,
-			Failure = 1
+			throw new NotImplementedException();
 		}
-
-		Result Perform();
 	}
 }

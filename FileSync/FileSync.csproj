@@ -127,7 +127,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Action\AppAction.cs" />
+    <Compile Include="Action\Configure.cs" />
     <Compile Include="Action\Download.cs" />
+    <Compile Include="Action\Upload.cs" />
+    <Compile Include="AppActionMapper.cs" />
+    <Compile Include="Application.cs" />
     <Compile Include="CloudService\CloudService.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

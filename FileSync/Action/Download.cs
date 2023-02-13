@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace FileSync.Action
 {
-	class Download
+	class Download : AppAction
 	{
+		public AppAction.Result Perform()
+		{
+			throw new NotImplementedException();
+		}
 	}
 }
