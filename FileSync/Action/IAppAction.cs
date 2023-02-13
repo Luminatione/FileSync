@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using CloudService;
 
-namespace FileSync.CloudService
+namespace FileSync.Action
 {
-	interface ICloudService
+	interface IAppAction
 	{
-		string Download();
-		string Upload();
+		IResponseDecoder.Result Perform();
 	}
 }

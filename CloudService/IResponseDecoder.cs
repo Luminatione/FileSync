@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FileSync.Action
+namespace CloudService
 {
-	interface AppAction
+	public interface IResponseDecoder
 	{
 		enum Result
 		{
@@ -14,6 +14,6 @@ namespace FileSync.Action
 			Failure = 1
 		}
 
-		Result Perform();
+		Result Decode(string response);
 	}
 }

@@ -70,6 +70,7 @@
       <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
     </Reference>
     <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.IO, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.IO.4.3.0\lib\net462\System.IO.dll</HintPath>
@@ -126,20 +127,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Action\AppAction.cs" />
+    <Compile Include="Action\IAppAction.cs" />
     <Compile Include="Action\Configure.cs" />
     <Compile Include="Action\Download.cs" />
     <Compile Include="Action\Upload.cs" />
     <Compile Include="AppActionMapper.cs" />
     <Compile Include="Application.cs" />
-    <Compile Include="CloudService\CloudService.cs" />
+    <Compile Include="CloudService\CloudServiceResolver.cs" />
+    <Compile Include="Properties\FileSync.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>FileSync.settings</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Properties\FileSync.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>FileSync.Designer.cs</LastGenOutput>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\CloudService\CloudService.csproj">
+      <Project>{f4d77c5b-602d-495c-892d-8d0cc6a98313}</Project>
+      <Name>CloudService</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
