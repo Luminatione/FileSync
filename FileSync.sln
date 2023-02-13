@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utility", "FileSync\Utility
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloudService", "CloudService\CloudService.csproj", "{F4D77C5B-602D-495C-892D-8D0CC6A98313}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoogleCloudService", "GoogleCloudService\GoogleCloudService.csproj", "{12F9DD17-1526-4689-9D57-17D4504D1810}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -61,6 +63,26 @@ Global
 		{F4D77C5B-602D-495C-892D-8D0CC6A98313}.Release|x64.Build.0 = Release|Any CPU
 		{F4D77C5B-602D-495C-892D-8D0CC6A98313}.Release|x86.ActiveCfg = Release|Any CPU
 		{F4D77C5B-602D-495C-892D-8D0CC6A98313}.Release|x86.Build.0 = Release|Any CPU
+		{12F9DD17-1526-4689-9D57-17D4504D1810}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12F9DD17-1526-4689-9D57-17D4504D1810}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12F9DD17-1526-4689-9D57-17D4504D1810}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{12F9DD17-1526-4689-9D57-17D4504D1810}.Debug|ARM.Build.0 = Debug|Any CPU
+		{12F9DD17-1526-4689-9D57-17D4504D1810}.Debug|ARM64.ActiveCfg = Debug|Any CPU
+		{12F9DD17-1526-4689-9D57-17D4504D1810}.Debug|ARM64.Build.0 = Debug|Any CPU
+		{12F9DD17-1526-4689-9D57-17D4504D1810}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{12F9DD17-1526-4689-9D57-17D4504D1810}.Debug|x64.Build.0 = Debug|Any CPU
+		{12F9DD17-1526-4689-9D57-17D4504D1810}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{12F9DD17-1526-4689-9D57-17D4504D1810}.Debug|x86.Build.0 = Debug|Any CPU
+		{12F9DD17-1526-4689-9D57-17D4504D1810}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12F9DD17-1526-4689-9D57-17D4504D1810}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12F9DD17-1526-4689-9D57-17D4504D1810}.Release|ARM.ActiveCfg = Release|Any CPU
+		{12F9DD17-1526-4689-9D57-17D4504D1810}.Release|ARM.Build.0 = Release|Any CPU
+		{12F9DD17-1526-4689-9D57-17D4504D1810}.Release|ARM64.ActiveCfg = Release|Any CPU
+		{12F9DD17-1526-4689-9D57-17D4504D1810}.Release|ARM64.Build.0 = Release|Any CPU
+		{12F9DD17-1526-4689-9D57-17D4504D1810}.Release|x64.ActiveCfg = Release|Any CPU
+		{12F9DD17-1526-4689-9D57-17D4504D1810}.Release|x64.Build.0 = Release|Any CPU
+		{12F9DD17-1526-4689-9D57-17D4504D1810}.Release|x86.ActiveCfg = Release|Any CPU
+		{12F9DD17-1526-4689-9D57-17D4504D1810}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

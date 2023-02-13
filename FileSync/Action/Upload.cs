@@ -15,7 +15,7 @@ namespace Utility.Action
 
 		public IResponseDecoder.Result Perform()
 		{
-			return responseDecoder.Decode(cloudService.Upload(Properties.Utility.Default.Properties));
+			return responseDecoder.Decode(cloudService.Upload(Properties.Utility.Default.ToDictionary()));
 		}
 	}
 }

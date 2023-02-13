@@ -16,10 +16,10 @@ namespace Utility
 			switch (actionName)
 			{
 				case "download":
-					(cloudService, responseDecoder) = new CloudServiceResolver().GetCloudServiceAndResponseDecoder(args[1]);
+					(cloudService, responseDecoder) = new CloudServiceResolver().GetCloudServiceAndResponseDecoder(args[0]);
 					return new Download(cloudService, responseDecoder);
 				case "upload":
-					(cloudService, responseDecoder) = new CloudServiceResolver().GetCloudServiceAndResponseDecoder(args[1]);
+					(cloudService, responseDecoder) = new CloudServiceResolver().GetCloudServiceAndResponseDecoder(args[0]);
 					return new Upload(cloudService, responseDecoder);
 				case "configure":
 					return new Configure(args);

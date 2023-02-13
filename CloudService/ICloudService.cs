@@ -9,7 +9,7 @@ namespace CloudService
 {
 	public interface ICloudService
 	{
-		string Download(SettingsPropertyCollection settings);
-		string Upload(SettingsPropertyCollection settings);
+		string Download(Dictionary<string, string> settings);
+		string Upload(Dictionary<string, string> settings);
 	}
 }
