@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using CloudService;
-using FileSync.Action;
-using FileSync.CloudService;
+using Utility.Action;
+using Utility.CloudService;
 
-namespace FileSync
+namespace Utility
 {
 	class AppActionMapper
 	{

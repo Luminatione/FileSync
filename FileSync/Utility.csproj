@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{3DF7D9A7-6B7B-4DEB-BF2A-3A616D84204E}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>FileSync</RootNamespace>
-    <AssemblyName>FileSync</AssemblyName>
+    <RootNamespace>Utility</RootNamespace>
+    <AssemblyName>Utility</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

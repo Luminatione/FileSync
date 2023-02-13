@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using CloudService;
 
-namespace FileSync.Action
+namespace Utility.Action
 {
 	interface IAppAction
 	{

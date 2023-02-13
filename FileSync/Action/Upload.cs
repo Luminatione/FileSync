@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using CloudService;
-using FileSync.CloudService;
+using Utility.CloudService;
 
-namespace FileSync.Action
+namespace Utility.Action
 {
 	class Upload : IAppAction
 	{
