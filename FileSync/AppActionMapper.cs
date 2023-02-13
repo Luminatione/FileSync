@@ -12,14 +12,20 @@ namespace Utility
 		{
 			ICloudService cloudService;
 			IResponseDecoder responseDecoder;
-			(cloudService, responseDecoder) = new CloudServiceResolver().GetCloudServiceAndResponseDecoder(args[1]);
-			return actionName switch
+
+			switch (actionName)
 			{
-				"download" => new Download(cloudService, responseDecoder),
-				"upload" => new Upload(cloudService, responseDecoder),
-				"configure" => new Configure(args[0], args[1], args[2]),
-				_ => throw new NotImplementedException()
-			};
+				case "download":
+					(cloudService, responseDecoder) = new CloudServiceResolver().GetCloudServiceAndResponseDecoder(args[1]);
+					return new Download(cloudService, responseDecoder);
+				case "upload":
+					(cloudService, responseDecoder) = new CloudServiceResolver().GetCloudServiceAndResponseDecoder(args[1]);
+					return new Upload(cloudService, responseDecoder);
+				case "configure":
+					return new Configure(args);
+				default:
+					throw new NotImplementedException();
+			}
 		}
 	}
 }

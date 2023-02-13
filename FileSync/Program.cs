@@ -5,7 +5,7 @@ namespace Utility
 	{
 		static void Main(string[] args)
 		{
-			if (args.Length < 3)
+			if (args.Length < 2)
 			{
 				ShowHelp();
 				return;

@@ -7,7 +7,7 @@ namespace Utility
 	{
 		public void Run(string[] args)
 		{
-			IAppAction action = new AppActionMapper().Map(args[1], args.ToList().GetRange(2, args.Length - 2));
+			IAppAction action = new AppActionMapper().Map(args[0], args.ToList().GetRange(1, args.Length - 1));
 			action.Perform();
 		}
 	}

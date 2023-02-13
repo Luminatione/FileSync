@@ -13,11 +13,11 @@ namespace Utility.Properties {
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "16.10.0.0")]
-    internal sealed partial class FileSync : global::System.Configuration.ApplicationSettingsBase {
+    internal sealed partial class Utility : global::System.Configuration.ApplicationSettingsBase {
         
-        private static FileSync defaultInstance = ((FileSync)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new FileSync())));
+        private static Utility defaultInstance = ((Utility)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Utility())));
         
-        public static FileSync Default {
+        public static Utility Default {
             get {
                 return defaultInstance;
             }
@@ -37,7 +37,7 @@ namespace Utility.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("abc")]
         public string Paths {
             get {
                 return ((string)(this["Paths"]));

@@ -134,19 +134,19 @@
     <Compile Include="AppActionMapper.cs" />
     <Compile Include="Application.cs" />
     <Compile Include="CloudService\CloudServiceResolver.cs" />
-    <Compile Include="Properties\FileSync.Designer.cs">
+    <Compile Include="Properties\Utility.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
-      <DependentUpon>FileSync.settings</DependentUpon>
+      <DependentUpon>Utility.settings</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="Properties\FileSync.settings">
+    <None Include="Properties\Utility.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>FileSync.Designer.cs</LastGenOutput>
+      <LastGenOutput>Utility.Designer.cs</LastGenOutput>
     </None>
     <None Include="packages.config" />
   </ItemGroup>
