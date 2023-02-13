@@ -9,7 +9,7 @@ namespace Utility.Action
 	{
 		private enum Option
 		{
-			Set, Get, Remove, Add, ShowAll
+			Set, Get, Remove, Add, ShowAll, New
 		}
 
 		private readonly string settingName;
@@ -49,11 +49,14 @@ namespace Utility.Action
 					case Option.Remove:
 						Properties.Utility.Default.Properties.Remove(settingName);
 						break;
-					case Option.Add:
+					case Option.New:
 						AddNewSetting(settingName, value);
 						break;
 					case Option.ShowAll:
 						ShowAll();
+						break;
+					case Option.Add:
+						Properties.Utility.Default[settingName] += ";" + value;
 						break;
 					default:
 						throw new ArgumentOutOfRangeException();
